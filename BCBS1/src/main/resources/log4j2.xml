@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Appenders>
+    
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+    
+    <RollingFile name="RollingFile" 
+    	 fileName=".//target/logs/test.log"
+         filePattern=".//target/logs/$${date:yyyy-MM}/testLog-%d{MM-dd-yyyy}-%i.log.gz">
+      <PatternLayout
+        pattern = "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+      <Policies>
+      	<OnStartupTriggeringPolicy />
+  		<SizeBasedTriggeringPolicy size="100 MB" />
+  		<TimeBasedTriggeringPolicy />
+      </Policies>
+      <DefaultRolloverStrategy max="20"/>
+    </RollingFile>
+    
+    
+    <RollingFile name="RollingFileHTML" 
+    	 fileName=".//target/logs/testLog.html"
+         filePattern=".//target/logs/$${date:yyyy-MM}/testLog-%d{MM-dd-yyyy}-%i.html.gz">
+      <HTMLLayout charset="UTF-8" title="Selenium Test Log"
+    		locationInfo="true" />
+      <Policies>
+      	<OnStartupTriggeringPolicy />
+  		<SizeBasedTriggeringPolicy size="100 MB" />
+  		<TimeBasedTriggeringPolicy />
+      </Policies>
+      <DefaultRolloverStrategy max="20"/>
+    </RollingFile>
+    
+  </Appenders>
+  
+  <Loggers>
+    <Root level="trace">
+      <AppenderRef ref="Console"/>
+    </Root>
+    
+    <logger name="com.Libraries.Base" level="DEBUG" additivity="false">
+    	<AppenderRef ref="Console" />
+    	<AppenderRef ref="RollingFile" />
+    	<AppenderRef ref="RollingFileHTML" />
+    </logger>
+    
+    <logger name="com.Libraries.MainLibrary" level="BEBUG" additivity="false">
+    	<AppenderRef ref="Console" />
+    	<AppenderRef ref="RollingFile" />
+    	<AppenderRef ref="RollingFileHTML" />
+    </logger>
+    
+  </Loggers>
+</Configuration>
+
+
+
+
+
+
+
+
+
+
+

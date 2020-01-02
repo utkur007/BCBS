@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="52106" started-at="2019-12-30T22:19:10Z" finished-at="2019-12-30T22:20:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="52106" started-at="2019-12-30T22:19:10Z" finished-at="2019-12-30T22:20:02Z">
+      <class name="com.Tests.ShopForInsurance">
+        <test-method status="PASS" signature="beforeAllTestStarts()[pri:0, instance:com.Tests.ShopForInsurance@4686afc2]" name="beforeAllTestStarts" is-config="true" duration-ms="113" started-at="2019-12-30T22:19:10Z" finished-at="2019-12-30T22:19:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeAllTestStarts -->
+        <test-method status="PASS" signature="beforeEachTestStart()[pri:0, instance:com.Tests.ShopForInsurance@4686afc2]" name="beforeEachTestStart" is-config="true" duration-ms="8973" started-at="2019-12-30T22:19:10Z" finished-at="2019-12-30T22:19:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeEachTestStart -->
+        <test-method status="PASS" signature="InsuranceShopTest()[pri:0, instance:com.Tests.ShopForInsurance@4686afc2]" name="InsuranceShopTest" duration-ms="33491" started-at="2019-12-30T22:19:19Z" finished-at="2019-12-30T22:19:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InsuranceShopTest -->
+        <test-method status="PASS" signature="afterEachTestEnd(org.testng.ITestResult)[pri:0, instance:com.Tests.ShopForInsurance@4686afc2]" name="afterEachTestEnd" is-config="true" duration-ms="6761" started-at="2019-12-30T22:19:52Z" finished-at="2019-12-30T22:19:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InsuranceShopTest status=SUCCESS method=ShopForInsurance.InsuranceShopTest()[pri:0, instance:com.Tests.ShopForInsurance@4686afc2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEachTestEnd -->
+        <test-method status="PASS" signature="afterAllTestCompleted()[pri:0, instance:com.Tests.ShopForInsurance@4686afc2]" name="afterAllTestCompleted" is-config="true" duration-ms="2687" started-at="2019-12-30T22:19:59Z" finished-at="2019-12-30T22:20:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterAllTestCompleted -->
+      </class> <!-- com.Tests.ShopForInsurance -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
